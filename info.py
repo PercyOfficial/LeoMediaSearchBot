@@ -48,20 +48,20 @@ SESSION_NAME = os.environ.get("SESSION_NAME", "LeoMediaSearchBot")
 default_start_massege = """
 **Hi {}👋
 
-I'm Leo Media Search Bot**
+I'm Korean Movies & TvSeries Search Bot 🇰🇷**
 
-You can start searching by the "Search Media 🔎" button below 😊
+You can start searching by the "Search Movies 🇰🇷" button below 😊
 """
 
 default_share_button_text = """
-Leo Media Search Bot 🇱🇰
+Korean Movies & TvSeries Search Bot 🇰🇷
 
 Here you can find any media file by searching its name 😊
 
-Bot : {username} 🤖
-Support Group : @leosupportx 🇱🇰
-Updates Channel: @new_ehi 🇱🇰
-Developper : @naviya2 🇱🇰
+Bot : {username} 🥰 🇰🇷
+Support Group : @Cortana_BOTs 🇱🇰 🇰🇷
+Updates Channel: @Cortana_Updates 🇱🇰 | Hwarang_FANs🇰🇷
+Developper : @percy_jackson_4 🇱🇰 🇰🇷
 """
 
 START_MSG = environ.get('START_MSG', default_start_massege)
