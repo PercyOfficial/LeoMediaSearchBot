@@ -40,11 +40,11 @@ async def start(bot, message):
     else:
         buttons = [
             [
-                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/new_ehi'),
+                InlineKeyboardButton('Updates Channel 🗣', url='https://t.me/Korean_Movies_TvSeries'),
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
-                InlineKeyboardButton('Search K Drama 🔎', switch_inline_query_current_chat=''),
+                InlineKeyboardButton('Search K Drama 🇰🇷🔎', switch_inline_query_current_chat=''),
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -123,7 +123,7 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Processing...⏳\nLeo Projects 🇱🇰", quote=True)
+        msg = await message.reply("Processing...⏳\nCortanaProjects 🇱🇰", quote=True)
     else:
         await message.reply('Reply to file with /delete which you want to delete', quote=True)
         return
@@ -143,9 +143,9 @@ async def delete(bot, message):
         'caption': reply.caption
     })
     if result.deleted_count:
-        await msg.edit('File is successfully deleted from database\nLeo Projects🇱🇰')
+        await msg.edit('File is successfully deleted from database\nCortana Projects🇱🇰')
     else:
-        await msg.edit('File not found in database\nLeo Projects🇱🇰')
+        await msg.edit('File not found in database\nCortana Projects🇱🇰')
 
 
 @Client.on_message(filters.private & filters.command("broadcast") & filters.user(info.BOT_OWNER) & filters.reply)
