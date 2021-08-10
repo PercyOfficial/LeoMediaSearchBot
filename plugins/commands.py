@@ -44,7 +44,7 @@ async def start(bot, message):
                 InlineKeyboardButton('Go Inline 🎭', switch_inline_query=''),
             ],
             [
-                InlineKeyboardButton('Search Media 🔎', switch_inline_query_current_chat=''),
+                InlineKeyboardButton('Search K Drama 🔎', switch_inline_query_current_chat=''),
             ],
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
